@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#085377"
+    tools:context=".DashboardActivity">
+
+    <RelativeLayout
+        android:background="#0981BC"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            app:tint="@color/white"
+           android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back"
+            android:id="@+id/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXIT"
+            android:id="@+id/ic_exit"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="false"
+        android:maxHeight="12dp"
+        android:minHeight="12dp"
+        android:id="@+id/quiz_timer"
+        android:progress="10"
+        android:max="20"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+        android:background="#0981BC"
+        />
+
+"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:id="@+id/card_question"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="optionAclick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/optionA"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="A"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/card_optiona"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="optionBclick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/optionB"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="B"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/card_optionb"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:onClick="optionCclick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/optionC"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="C"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/card_optionc"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:onClick="optionDclick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/optionD"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="D"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/card_optiond"/>
+
+    </androidx.cardview.widget.CardView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="70dp"
+    android:gravity="center"
+    android:id="@+id/nextbtn"
+    android:background="@drawable/next_btn_shape"
+    android:layout_marginStart="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginEnd="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+
+        />
+</LinearLayout>
+
+</LinearLayout>
